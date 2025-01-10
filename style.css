@@ -6,6 +6,7 @@
 
 body {
     padding: 1em;
+    background-color: black;
 }
 
 #wrap {
@@ -40,7 +41,6 @@ nav {
 nav  ul {
  display: flex;
  justify-content: space-between;
- align-items: center;
  list-style-type: none;
  background-color: #2A2A3E;
  padding: 6px;
@@ -59,8 +59,28 @@ nav  ul {
     color: #D4D4DC;
 }
 
+.about-menu li:hover {
+    background-color: #D4D4DC;
+}
+
+.about-menu a:hover {
+    color: #1A1A2E;
+}
+
 .about-menu {
     display: none;
+    width: 15em;
+    
+}
+
+.about-menu li {
+    margin: 1px;
+    padding: 2px;
+    text-align: left;
+}
+
+.main-nav-el:hover .about-menu {
+    display: block;
 }
 
 .about-menu ul{
@@ -84,7 +104,7 @@ nav  ul {
 
 #sorcs, #wizards {
     width: 50%;
-    padding: 25px 15px;
+    padding: 25px 15px 0px 15px;
     color: #D4D4DC;
     line-height: 2em;
 }
@@ -98,7 +118,11 @@ h2, h3, h4 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
+}
+
+#sorcs h2, #sorcs h3, #sorcs h4 {
+    text-align: right;
 }
 
 #main-div {
@@ -131,4 +155,23 @@ p {
     font-size: 1.1em;
     text-transform: uppercase;
     color: #f3f4f6;
+}
+
+#wiz-img {
+    display: flex;
+    gap: 15em;
+}
+
+#sorc-img {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 12em;
+}
+
+#wiz-img img, #sorc-img img {
+    height: 150px;
+    width: 150px;
+    border: solid 2px #1A1A2E;
+    padding: 10px;
+    background-color: #D4D4DC;
 }
